@@ -211,8 +211,7 @@ public class Magnet implements View.OnTouchListener {
     private void flingAway() {
         if (shouldFlingAway) {
             int y = mContext.getResources().getDisplayMetrics().heightPixels / 2;
-            int x = 0;
-            mAnimator.start(x, y);
+            mAnimator.start(0, y);
             if (mListener != null) {
                 mListener.onFlingAway();
             }
